@@ -1,0 +1,677 @@
+2020-04-24 17:23:14,866 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 17:23:15,327 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-04-24 17:23:16,107 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=d3c2fd1b-0240-3b4c-968d-10779d664025
+2020-04-24 17:23:17,676 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2020-04-24 17:23:17,685 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:23:17,686 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-04-24 17:23:17,686 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 17:23:17,785 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 17:23:17,786 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2446 ms
+2020-04-24 17:23:18,027 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76d74ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@13f0fe26, org.springframework.security.web.header.HeaderWriterFilter@7b7975c1, org.springframework.security.web.authentication.logout.LogoutFilter@63756d68, com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter@17720a82, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fe11bd9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5c4cdfb6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15580ba1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b51c1a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@542148fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70d6c285, org.springframework.security.web.session.SessionManagementFilter@7b40d1cc, org.springframework.security.web.access.ExceptionTranslationFilter@ef7a5e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7aca48d7]
+2020-04-24 17:23:18,036 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:23:18,037 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:23:18,041 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:23:18,042 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:23:18,116 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 17:23:18,273 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 17:23:18,744 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-24 17:23:18,823 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-04-24 17:23:18,853 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-04-24 17:23:19,125 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-04-24 17:23:19,125 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-04-24 17:23:19,247 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-04-24 17:23:19,247 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-04-24 17:23:19,362 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-04-24 17:23:19,507 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-04-24 17:23:19,507 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-04-24 17:23:19,507 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-04-24 17:23:19,508 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-04-24 17:23:19,508 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-04-24 17:23:19,508 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-04-24 17:23:19,508 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-04-24 17:23:19,663 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-04-24 17:23:19,664 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-04-24 17:23:19,666 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-24 17:23:19,672 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1587738199669 with initial instances count: 0
+2020-04-24 17:23:19,675 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application AUTH-SERVICE with eureka with status UP
+2020-04-24 17:23:19,676 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1587738199676, current=UP, previous=STARTING]
+2020-04-24 17:23:19,678 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 17:23:19,686 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:23:19,707 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9100 (http) with context path ''
+2020-04-24 17:23:19,708 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9100
+2020-04-24 17:23:19,738 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 17:23:19,918 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started AuthenticationServiceApplication in 6.133 seconds (JVM running for 7.988)
+2020-04-24 17:23:49,666 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2020-04-24 17:23:49,667 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2020-04-24 17:23:49,667 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2020-04-24 17:23:49,667 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2020-04-24 17:23:49,668 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2020-04-24 17:23:49,668 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2020-04-24 17:23:49,668 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2020-04-24 17:23:49,729 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2020-04-24 17:23:57,782 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 17:23:57,783 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 17:23:57,791 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 7 ms
+2020-04-24 17:23:58,186 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:23:58,263 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
+2020-04-24 17:24:28,491 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with username: admihn not found in the database
+2020-04-24 17:24:28,570 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-3] Logging failed
+2020-04-24 17:24:33,551 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-5] User with username: admihn not found in the database
+2020-04-24 17:24:33,631 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-5] Logging failed
+2020-04-24 17:24:35,669 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-7] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:24:35,898 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-7] An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter.attemptAuthentication(JwtUsernameAndPasswordAuthenticationFilter.java:63)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
+	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 50 common frames omitted
+2020-04-24 17:24:48,629 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-9] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:24:48,630 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-9] An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter.attemptAuthentication(JwtUsernameAndPasswordAuthenticationFilter.java:63)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
+	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 50 common frames omitted
+2020-04-24 17:25:31,761 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 17:25:32,220 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-04-24 17:25:33,395 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=d3c2fd1b-0240-3b4c-968d-10779d664025
+2020-04-24 17:25:36,551 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2020-04-24 17:25:36,565 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:25:36,566 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-04-24 17:25:36,567 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 17:25:36,778 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 17:25:36,779 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4540 ms
+2020-04-24 17:25:37,217 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39b476ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@c805f5f, org.springframework.security.web.header.HeaderWriterFilter@45e9564a, org.springframework.security.web.authentication.logout.LogoutFilter@24682098, com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter@50108914, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c0b033, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@798a87ed, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22bd5b01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfb7fb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f811af4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59c9c504, org.springframework.security.web.session.SessionManagementFilter@2787da08, org.springframework.security.web.access.ExceptionTranslationFilter@7b10aa27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4de2ebd2]
+2020-04-24 17:25:37,244 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:25:37,245 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:25:37,248 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:25:37,249 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:25:37,390 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 17:25:37,596 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 17:25:38,211 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-24 17:25:38,348 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-04-24 17:25:38,382 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-04-24 17:25:38,768 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-04-24 17:25:38,768 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-04-24 17:25:38,904 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-04-24 17:25:38,904 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-04-24 17:25:39,124 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-04-24 17:25:39,293 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-04-24 17:25:39,294 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-04-24 17:25:39,294 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-04-24 17:25:39,294 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-04-24 17:25:39,294 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-04-24 17:25:39,295 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-04-24 17:25:39,295 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-04-24 17:25:39,505 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-04-24 17:25:39,510 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-04-24 17:25:39,513 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-24 17:25:39,518 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1587738339516 with initial instances count: 2
+2020-04-24 17:25:39,525 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application AUTH-SERVICE with eureka with status UP
+2020-04-24 17:25:39,525 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1587738339525, current=UP, previous=STARTING]
+2020-04-24 17:25:39,528 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 17:25:39,540 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:25:39,572 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9100 (http) with context path ''
+2020-04-24 17:25:39,572 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 17:25:39,573 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9100
+2020-04-24 17:25:39,793 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started AuthenticationServiceApplication in 9.314 seconds (JVM running for 17.59)
+2020-04-24 17:25:43,144 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 17:25:43,144 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 17:25:43,149 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 5 ms
+2020-04-24 17:25:53,994 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:25:55,524 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
+2020-04-24 17:26:03,694 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringContextShutdownHook] Unregistering application AUTH-SERVICE with eureka with status DOWN
+2020-04-24 17:26:03,695 WARN com.netflix.discovery.DiscoveryClient$3 [SpringContextShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1587738363695, current=DOWN, previous=UP]
+2020-04-24 17:26:03,695 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 17:26:03,700 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 17:26:03,754 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-24 17:26:03,768 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Shutting down DiscoveryClient ...
+2020-04-24 17:26:06,772 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Unregistering ...
+2020-04-24 17:26:06,777 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - deregister  status: 200
+2020-04-24 17:26:06,790 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Completed shut down of DiscoveryClient
+2020-04-24 17:43:51,259 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 17:43:51,624 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-04-24 17:43:52,241 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=d2c6456e-1fbe-3a8d-a85a-037102c6dffb
+2020-04-24 17:43:52,757 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2020-04-24 17:43:52,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:43:52,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-04-24 17:43:52,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 17:43:52,857 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 17:43:52,858 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1225 ms
+2020-04-24 17:43:53,061 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39c6e86f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fdaa40, org.springframework.security.web.header.HeaderWriterFilter@2bf959f0, org.springframework.security.web.authentication.logout.LogoutFilter@4978e0c3, com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter@d17e3bd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1307486b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@449a148d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@718a3401, org.springframework.security.web.session.SessionManagementFilter@dd10e73, org.springframework.security.web.access.ExceptionTranslationFilter@6b117bfc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cc74356]
+2020-04-24 17:43:53,070 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:43:53,070 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:43:53,072 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:43:53,073 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:43:53,144 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 17:43:53,259 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 17:43:53,702 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-24 17:43:53,765 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-04-24 17:43:53,790 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-04-24 17:43:54,092 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-04-24 17:43:54,093 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-04-24 17:43:54,216 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-04-24 17:43:54,216 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-04-24 17:43:54,322 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-04-24 17:43:54,460 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-04-24 17:43:54,460 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-04-24 17:43:54,460 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-04-24 17:43:54,461 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-04-24 17:43:54,461 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-04-24 17:43:54,461 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-04-24 17:43:54,461 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-04-24 17:43:54,548 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-04-24 17:43:54,550 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-04-24 17:43:54,551 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-24 17:43:54,555 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1587739434554 with initial instances count: 1
+2020-04-24 17:43:54,557 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application AUTH-SERVICE with eureka with status UP
+2020-04-24 17:43:54,558 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1587739434558, current=UP, previous=STARTING]
+2020-04-24 17:43:54,560 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 17:43:54,569 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:43:54,587 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 17:43:54,587 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9100 (http) with context path ''
+2020-04-24 17:43:54,588 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9100
+2020-04-24 17:43:54,795 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started AuthenticationServiceApplication in 4.412 seconds (JVM running for 6.274)
+2020-04-24 17:44:17,175 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 17:44:17,175 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 17:44:17,180 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 5 ms
+2020-04-24 17:44:17,442 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:44:17,519 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
+2020-04-24 17:44:32,006 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-2] User with username: admihn not found in the database
+2020-04-24 17:44:32,083 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
+2020-04-24 17:44:35,426 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with username: admihn not found in the database
+2020-04-24 17:44:35,502 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-3] Logging failed
+2020-04-24 17:44:37,526 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-4] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:44:37,529 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-4] An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter.attemptAuthentication(JwtUsernameAndPasswordAuthenticationFilter.java:68)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
+	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 50 common frames omitted
+2020-04-24 17:45:15,095 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 17:45:15,551 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-04-24 17:45:16,003 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=d2c6456e-1fbe-3a8d-a85a-037102c6dffb
+2020-04-24 17:45:16,332 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2020-04-24 17:45:16,337 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:45:16,337 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-04-24 17:45:16,337 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 17:45:16,423 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 17:45:16,423 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 855 ms
+2020-04-24 17:45:16,583 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@199992b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@52550e82, org.springframework.security.web.header.HeaderWriterFilter@200fff13, org.springframework.security.web.authentication.logout.LogoutFilter@24f5fd6f, com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter@2f3f2f91, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5120dd07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67bf2564, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23712d87, org.springframework.security.web.session.SessionManagementFilter@3a60944e, org.springframework.security.web.access.ExceptionTranslationFilter@2c47e6d0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23f6af53]
+2020-04-24 17:45:16,591 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:45:16,592 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:45:16,594 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 17:45:16,594 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 17:45:16,663 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 17:45:16,766 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 17:45:17,204 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-24 17:45:17,263 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-04-24 17:45:17,280 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-04-24 17:45:17,379 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-04-24 17:45:17,380 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-04-24 17:45:17,442 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-04-24 17:45:17,442 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-04-24 17:45:17,550 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-04-24 17:45:17,682 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-04-24 17:45:17,682 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-04-24 17:45:17,682 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-04-24 17:45:17,682 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-04-24 17:45:17,682 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-04-24 17:45:17,683 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-04-24 17:45:17,683 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-04-24 17:45:17,766 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-04-24 17:45:17,768 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-04-24 17:45:17,770 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-24 17:45:17,773 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1587739517772 with initial instances count: 2
+2020-04-24 17:45:17,775 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application AUTH-SERVICE with eureka with status UP
+2020-04-24 17:45:17,775 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1587739517775, current=UP, previous=STARTING]
+2020-04-24 17:45:17,777 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 17:45:17,785 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9100"]
+2020-04-24 17:45:17,800 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9100 (http) with context path ''
+2020-04-24 17:45:17,801 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9100
+2020-04-24 17:45:17,850 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 17:45:17,998 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started AuthenticationServiceApplication in 3.61 seconds (JVM running for 4.425)
+2020-04-24 17:45:21,537 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 17:45:21,537 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 17:45:21,545 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 8 ms
+2020-04-24 17:45:21,800 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:45:21,877 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
+2020-04-24 17:45:23,874 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-2] User with username: admihn not found in the database
+2020-04-24 17:45:23,949 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
+2020-04-24 17:45:25,488 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-4] User with username: admihn not found in the database
+2020-04-24 17:45:25,565 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-4] Logging failed
+2020-04-24 17:45:26,640 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:45:26,642 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-3] An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter.attemptAuthentication(JwtUsernameAndPasswordAuthenticationFilter.java:68)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
+	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 50 common frames omitted
+2020-04-24 18:23:38,245 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 18:23:38,649 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-04-24 18:23:39,445 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=c8e9a1b1-f15d-3eae-a12b-c8b63e577560
+2020-04-24 18:23:39,808 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2020-04-24 18:23:39,813 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2020-04-24 18:23:39,814 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-04-24 18:23:39,814 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 18:23:39,908 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 18:23:39,909 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1252 ms
+2020-04-24 18:23:41,303 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ad3f572, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b69d30c, org.springframework.security.web.header.HeaderWriterFilter@7c886d1a, org.springframework.security.web.authentication.logout.LogoutFilter@6dc83578, com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter@6596f9a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d37d5d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f2bd400, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f8a3011, org.springframework.security.web.session.SessionManagementFilter@7d6bca35, org.springframework.security.web.access.ExceptionTranslationFilter@40864f85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@285d416]
+2020-04-24 18:23:41,312 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 18:23:41,313 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 18:23:41,318 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 18:23:41,319 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 18:23:41,411 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 18:23:41,554 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 18:23:42,030 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-24 18:23:42,103 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-04-24 18:23:42,122 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-04-24 18:23:42,216 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-04-24 18:23:42,216 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-04-24 18:23:42,286 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-04-24 18:23:42,287 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-04-24 18:23:42,393 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-04-24 18:23:42,540 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-04-24 18:23:42,540 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-04-24 18:23:42,540 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-04-24 18:23:42,541 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-04-24 18:23:42,541 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-04-24 18:23:42,541 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-04-24 18:23:42,541 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-04-24 18:23:42,910 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-04-24 18:23:42,911 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-04-24 18:23:42,913 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-24 18:23:42,918 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1587741822916 with initial instances count: 0
+2020-04-24 18:23:42,920 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application AUTH-SERVICE with eureka with status UP
+2020-04-24 18:23:42,921 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1587741822921, current=UP, previous=STARTING]
+2020-04-24 18:23:42,923 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 18:23:42,931 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9100"]
+2020-04-24 18:23:42,947 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9100 (http) with context path ''
+2020-04-24 18:23:42,949 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9100
+2020-04-24 18:23:43,154 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started AuthenticationServiceApplication in 5.801 seconds (JVM running for 6.903)
+2020-04-24 18:23:43,793 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 18:24:11,753 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 18:24:11,753 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 18:24:11,757 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 3 ms
+2020-04-24 18:24:12,012 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 18:24:12,087 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
+2020-04-24 18:24:12,912 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2020-04-24 18:24:12,913 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2020-04-24 18:24:12,913 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2020-04-24 18:24:12,913 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2020-04-24 18:24:12,914 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2020-04-24 18:24:12,914 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2020-04-24 18:24:12,914 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2020-04-24 18:24:12,943 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2020-04-24 18:24:24,792 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-2] User with username: admihn not found in the database
+2020-04-24 18:24:24,869 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
+2020-04-24 18:24:27,029 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with username: admihn not found in the database
+2020-04-24 18:24:27,106 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-3] Logging failed
+2020-04-24 18:24:28,502 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-4] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 18:24:28,508 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-4] An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter.attemptAuthentication(JwtUsernameAndPasswordAuthenticationFilter.java:68)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
+	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 50 common frames omitted
+2020-04-24 18:24:47,817 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-5] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 18:24:47,818 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-5] An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:175)
+	at com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter.attemptAuthentication(JwtUsernameAndPasswordAuthenticationFilter.java:68)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
+	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	... 50 common frames omitted
+2020-04-24 18:28:00,336 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-24 18:28:00,708 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-04-24 18:28:03,669 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=c8e9a1b1-f15d-3eae-a12b-c8b63e577560
+2020-04-24 18:28:04,018 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2020-04-24 18:28:04,023 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2020-04-24 18:28:04,024 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-04-24 18:28:04,024 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-24 18:28:04,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-04-24 18:28:04,300 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3583 ms
+2020-04-24 18:28:04,573 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32e5be8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@78adeab0, org.springframework.security.web.header.HeaderWriterFilter@35429246, org.springframework.security.web.authentication.logout.LogoutFilter@243faf3d, com.autentication.authenticationservice.security.JwtUsernameAndPasswordAuthenticationFilter@529a2cb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43dfde96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@340c6c01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e7c91ba, org.springframework.security.web.session.SessionManagementFilter@62bbe7d0, org.springframework.security.web.access.ExceptionTranslationFilter@1664dea7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7da9323c]
+2020-04-24 18:28:04,583 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 18:28:04,583 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 18:28:04,585 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-04-24 18:28:04,586 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-24 18:28:04,665 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 18:28:05,103 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-04-24 18:28:06,024 WARN org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-24 18:28:06,100 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-04-24 18:28:06,132 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-04-24 18:28:08,297 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-04-24 18:28:08,298 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-04-24 18:28:10,412 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-04-24 18:28:10,413 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-04-24 18:28:10,768 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-04-24 18:28:11,016 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2020-04-24 18:28:11,017 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-04-24 18:28:11,017 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-04-24 18:28:11,017 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2020-04-24 18:28:11,018 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-04-24 18:28:11,018 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2020-04-24 18:28:11,018 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-04-24 18:28:11,174 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2020-04-24 18:28:11,310 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-04-24 18:28:11,312 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-24 18:28:11,494 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1587742091315 with initial instances count: 3
+2020-04-24 18:28:11,496 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application AUTH-SERVICE with eureka with status UP
+2020-04-24 18:28:11,497 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1587742091497, current=UP, previous=STARTING]
+2020-04-24 18:28:11,499 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100: registering service...
+2020-04-24 18:28:11,521 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9100"]
+2020-04-24 18:28:11,568 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_AUTH-SERVICE/DESKTOP-1UEFQIU:auth-service:9100 - registration status: 204
+2020-04-24 18:28:11,572 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9100 (http) with context path ''
+2020-04-24 18:28:11,575 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 9100
+2020-04-24 18:28:11,905 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started AuthenticationServiceApplication in 14.619 seconds (JVM running for 23.004)
+2020-04-24 18:29:09,208 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 18:29:09,209 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-04-24 18:29:09,213 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 4 ms
+2020-04-24 18:29:09,524 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 18:29:09,603 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed

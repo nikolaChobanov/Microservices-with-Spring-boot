@@ -1,8 +1,12 @@
 package com.autentication.authenticationservice.security;
 
+import com.autentication.authenticationservice.security.block.CustomAuthenticationFailureHandler;
+import com.autentication.authenticationservice.security.block.CustomAuthenticationSuccessHandler;
+import com.autentication.authenticationservice.security.entities.UserCredentials;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -20,6 +24,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.stream.Collectors;
 
+@Slf4j
 public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
     private AuthenticationManager authenticationManager;
@@ -27,9 +32,12 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
     private JwtConfig jwtConfig;
 
     public JwtUsernameAndPasswordAuthenticationFilter(AuthenticationManager authenticationManager,
-                                                      JwtConfig jwtConfig) {
+                                                      JwtConfig jwtConfig, CustomAuthenticationSuccessHandler successHandler,
+                                                      CustomAuthenticationFailureHandler failureHandler) {
         this.authenticationManager = authenticationManager;
         this.jwtConfig = jwtConfig;
+        setAuthenticationFailureHandler(failureHandler);
+        setAuthenticationSuccessHandler(successHandler);
 
 
         this.setRequiresAuthenticationRequestMatcher(new AntPathRequestMatcher(jwtConfig.getUri(), "POST"));
@@ -48,8 +56,13 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
             authToken = new UsernamePasswordAuthenticationToken(credentials.getUserName(),
                     credentials.getPassword(), Collections.emptyList());
 
+            //authenticate the user
+
+
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            log.error("Trouble reading user credentials");
+            System.out.println("attemptAuthentication could not read user credentials ");
+            throw new RuntimeException(e + "FAILEE");
         }
 
         return authenticationManager.authenticate(authToken);
@@ -71,4 +84,6 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
 
         response.addHeader(jwtConfig.getHeader(), jwtConfig.getPrefix() + token);
     }
+
+
 }
