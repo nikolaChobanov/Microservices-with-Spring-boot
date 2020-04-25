@@ -1,6 +1,15 @@
 package com.autentication.authenticationservice.security.entities;
 
-/*
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.util.List;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -15,4 +24,3 @@ public class MyUser extends BaseEntity{
 
     private List<GrantedAuthority> userRole;
 }
-*/

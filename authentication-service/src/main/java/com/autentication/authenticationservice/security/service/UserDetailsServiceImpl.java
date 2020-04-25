@@ -1,12 +1,11 @@
 package com.autentication.authenticationservice.security.service;
 
 import com.autentication.authenticationservice.security.block.LoginAttemptService;
-import com.autentication.authenticationservice.security.entities.AppUser;
+import com.autentication.authenticationservice.security.entities.MyUser;
 import com.autentication.authenticationservice.security.exception.UserIsBlocked;
+import com.autentication.authenticationservice.security.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -15,8 +14,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
-import java.util.List;
 
 @Slf4j
 @Service
@@ -24,10 +21,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
     private BCryptPasswordEncoder encoder;
-    /*
-        @Autowired
-        private UserRepository userRepository;
-    */
+
+    @Autowired
+    private UserRepository userRepository;
+
     @Autowired
     private LoginAttemptService loginAttemptService;
 
@@ -46,7 +43,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
 
 
-        final List<AppUser> users = Arrays.asList(
+     /*   final List<AppUser> users = Arrays.asList(
                 new AppUser(1, "omar", encoder.encode("12345"), "USER"),
                 new AppUser(2, "admin", encoder.encode("12345"), "ADMIN")
         );
@@ -66,16 +63,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         log.error("User with username: " + userName + " not found in the database");
         throw new UsernameNotFoundException("UserName: " + userName + " not found");
 
+*/
 
 
-
-
-       /* MyUser myUser = userRepository.findByUsername(userName);
+        MyUser myUser = userRepository.findByUsername(userName);
 
         if (myUser == null) {
             throw new UsernameNotFoundException("UserName: " + userName + " not found");
         }
-*/
+
 
         /*
          if (user == null) {
@@ -91,7 +87,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         */
 
 
-        //  return toUserDetails(myUser);
+        return toUserDetails(myUser);
     }
 
     private String getClientIP() {
@@ -103,7 +99,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     }
 
 
-    /*private UserDetails toUserDetails(MyUser myUser) {
+    private UserDetails toUserDetails(MyUser myUser) {
 
         User.UserBuilder builder = User.withUsername(myUser.getUsername())
                 .password(myUser.getPassword())
@@ -111,5 +107,5 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         return builder.build();
 
-    }*/
+    }
 }

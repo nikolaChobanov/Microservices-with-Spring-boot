@@ -1,7 +1,10 @@
 package com.autentication.authenticationservice.security.entities;
 
 
-/*
+import lombok.Getter;
+
+import javax.persistence.*;
+
 @Entity
 @Getter
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
@@ -11,4 +14,3 @@ public class BaseEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 }
-*/
