@@ -52,13 +52,13 @@
 2020-04-24 17:23:57,782 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-24 17:23:57,783 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
 2020-04-24 17:23:57,791 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 7 ms
-2020-04-24 17:23:58,186 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:23:58,186 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-1] User with username: admihn not found in the database
 2020-04-24 17:23:58,263 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
-2020-04-24 17:24:28,491 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with username: admihn not found in the database
+2020-04-24 17:24:28,491 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-3] User with username: admihn not found in the database
 2020-04-24 17:24:28,570 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-3] Logging failed
-2020-04-24 17:24:33,551 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-5] User with username: admihn not found in the database
+2020-04-24 17:24:33,551 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-5] User with username: admihn not found in the database
 2020-04-24 17:24:33,631 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-5] Logging failed
-2020-04-24 17:24:35,669 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-7] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:24:35,669 INFO com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-7] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-24 17:24:35,898 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-7] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -113,10 +113,10 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
-	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at com.autentication.authenticationservice.security.service.UserService.loadUserByUsername(UserDetailsServiceImpl.java:46)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
-2020-04-24 17:24:48,629 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-9] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:24:48,629 INFO com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-9] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-24 17:24:48,630 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-9] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -171,7 +171,7 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
-	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at com.autentication.authenticationservice.security.service.UserService.loadUserByUsername(UserDetailsServiceImpl.java:46)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-24 17:25:31,761 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -220,7 +220,7 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-24 17:25:43,144 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-24 17:25:43,144 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
 2020-04-24 17:25:43,149 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 5 ms
-2020-04-24 17:25:53,994 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:25:53,994 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-1] User with username: admihn not found in the database
 2020-04-24 17:25:55,524 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
 2020-04-24 17:26:03,694 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringContextShutdownHook] Unregistering application AUTH-SERVICE with eureka with status DOWN
 2020-04-24 17:26:03,695 WARN com.netflix.discovery.DiscoveryClient$3 [SpringContextShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1587738363695, current=DOWN, previous=UP]
@@ -277,13 +277,13 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-24 17:44:17,175 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-24 17:44:17,175 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
 2020-04-24 17:44:17,180 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 5 ms
-2020-04-24 17:44:17,442 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:44:17,442 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-1] User with username: admihn not found in the database
 2020-04-24 17:44:17,519 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
-2020-04-24 17:44:32,006 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-2] User with username: admihn not found in the database
+2020-04-24 17:44:32,006 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-2] User with username: admihn not found in the database
 2020-04-24 17:44:32,083 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
-2020-04-24 17:44:35,426 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with username: admihn not found in the database
+2020-04-24 17:44:35,426 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-3] User with username: admihn not found in the database
 2020-04-24 17:44:35,502 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-3] Logging failed
-2020-04-24 17:44:37,526 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-4] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:44:37,526 INFO com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-4] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-24 17:44:37,529 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-4] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -338,7 +338,7 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
-	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at com.autentication.authenticationservice.security.service.UserService.loadUserByUsername(UserDetailsServiceImpl.java:46)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-24 17:45:15,095 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -387,13 +387,13 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-24 17:45:21,537 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-24 17:45:21,537 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
 2020-04-24 17:45:21,545 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 8 ms
-2020-04-24 17:45:21,800 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 17:45:21,800 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-1] User with username: admihn not found in the database
 2020-04-24 17:45:21,877 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
-2020-04-24 17:45:23,874 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-2] User with username: admihn not found in the database
+2020-04-24 17:45:23,874 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-2] User with username: admihn not found in the database
 2020-04-24 17:45:23,949 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
-2020-04-24 17:45:25,488 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-4] User with username: admihn not found in the database
+2020-04-24 17:45:25,488 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-4] User with username: admihn not found in the database
 2020-04-24 17:45:25,565 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-4] Logging failed
-2020-04-24 17:45:26,640 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 17:45:26,640 INFO com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-3] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-24 17:45:26,642 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-3] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: blocked
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -448,7 +448,7 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: blocked
-	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at com.autentication.authenticationservice.security.service.UserService.loadUserByUsername(UserDetailsServiceImpl.java:46)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-24 18:23:38,245 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -497,7 +497,7 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-24 18:24:11,753 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-24 18:24:11,753 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
 2020-04-24 18:24:11,757 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 3 ms
-2020-04-24 18:24:12,012 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 18:24:12,012 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-1] User with username: admihn not found in the database
 2020-04-24 18:24:12,087 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
 2020-04-24 18:24:12,912 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
 2020-04-24 18:24:12,913 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
@@ -507,11 +507,11 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-24 18:24:12,914 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
 2020-04-24 18:24:12,914 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
 2020-04-24 18:24:12,943 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
-2020-04-24 18:24:24,792 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-2] User with username: admihn not found in the database
+2020-04-24 18:24:24,792 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-2] User with username: admihn not found in the database
 2020-04-24 18:24:24,869 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
-2020-04-24 18:24:27,029 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-3] User with username: admihn not found in the database
+2020-04-24 18:24:27,029 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-3] User with username: admihn not found in the database
 2020-04-24 18:24:27,106 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-3] Logging failed
-2020-04-24 18:24:28,502 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-4] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 18:24:28,502 INFO com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-4] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-24 18:24:28,508 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-4] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -566,10 +566,10 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
-	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at com.autentication.authenticationservice.security.service.UserService.loadUserByUsername(UserDetailsServiceImpl.java:46)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
-2020-04-24 18:24:47,817 INFO com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-5] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-24 18:24:47,817 INFO com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-5] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-24 18:24:47,818 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-5] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -624,7 +624,7 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
-	at com.autentication.authenticationservice.security.service.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:46)
+	at com.autentication.authenticationservice.security.service.UserService.loadUserByUsername(UserDetailsServiceImpl.java:46)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-24 18:28:00,336 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -673,5 +673,5 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-24 18:29:09,208 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9100-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-24 18:29:09,209 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Initializing Servlet 'dispatcherServlet'
 2020-04-24 18:29:09,213 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9100-exec-1] Completed initialization in 4 ms
-2020-04-24 18:29:09,524 ERROR com.autentication.authenticationservice.security.service.UserDetailsServiceImpl [http-nio-9100-exec-1] User with username: admihn not found in the database
+2020-04-24 18:29:09,524 ERROR com.autentication.authenticationservice.security.service.UserService [http-nio-9100-exec-1] User with username: admihn not found in the database
 2020-04-24 18:29:09,603 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed

@@ -1,26 +1,43 @@
 package com.autentication.authenticationservice.security.controller;
 
 
-import com.autentication.authenticationservice.security.service.UserRepositoryService;
+import com.autentication.authenticationservice.security.entities.AppUser;
+import com.autentication.authenticationservice.security.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
-@Controller
+import javax.validation.Valid;
+
+@RestController
+@RequestMapping(value = "/register")
 public class RegistrationController {
 
+    private static final String USERNAME_ALREADY_TAKEN_MESSAGE = "username: '%s' is already taken";
 
-@Autowired
-UserRepositoryService userRepositoryService;
-
-    @GetMapping("/registration/username/{username}/password/{password}")
-    public void registration(@PathVariable String username, @PathVariable String password){
+    @Autowired
+    UserService userService;
 
 
-        if(userRepositoryService.findIfUsernameFree(username)){
-            userRepositoryService.saveCredentials(username,password);
+    @PostMapping(
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    @ResponseStatus(HttpStatus.CREATED)
+    public AppUser createUser(@Valid @RequestBody AppUser appUser) {
+
+
+        if (userService.findIfUsernameFree(appUser.getUsername())) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    String.format(USERNAME_ALREADY_TAKEN_MESSAGE, appUser.getUsername())
+            );
         }
+
+        return userService.createUser(appUser);
     }
+
 
 }

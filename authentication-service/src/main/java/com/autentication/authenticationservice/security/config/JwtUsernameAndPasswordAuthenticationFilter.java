@@ -2,6 +2,7 @@ package com.autentication.authenticationservice.security.config;
 
 import com.autentication.authenticationservice.security.block.CustomAuthenticationFailureHandler;
 import com.autentication.authenticationservice.security.block.CustomAuthenticationSuccessHandler;
+import com.autentication.authenticationservice.security.entities.RegistrationData;
 import com.autentication.authenticationservice.security.entities.UserCredentials;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
@@ -56,7 +57,8 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
             authToken = new UsernamePasswordAuthenticationToken(credentials.getUserName(),
                     credentials.getPassword(), Collections.emptyList());
 
-            //authenticate the user
+              RegistrationData data=new RegistrationData(credentials.getUserName(),credentials.getPassword());
+
 
 
         } catch (IOException e) {
@@ -65,6 +67,7 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
             throw new RuntimeException(e + "FAILEE");
         }
 
+        //authenticate the user
         return authenticationManager.authenticate(authToken);
     }
 

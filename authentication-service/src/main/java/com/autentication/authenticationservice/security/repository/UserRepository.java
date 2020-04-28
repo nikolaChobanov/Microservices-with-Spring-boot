@@ -1,13 +1,16 @@
 package com.autentication.authenticationservice.security.repository;
 
 
-import com.autentication.authenticationservice.security.entities.MyUser;
+import com.autentication.authenticationservice.security.entities.EntityUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
-public interface UserRepository extends JpaRepository<MyUser, Long> {
+public interface UserRepository extends JpaRepository<EntityUser, Long> {
 
-    MyUser findByUsername(String username);
+    Optional<EntityUser> findByUsername(String username);
 
+    Boolean existsByUsername(String username);
 }

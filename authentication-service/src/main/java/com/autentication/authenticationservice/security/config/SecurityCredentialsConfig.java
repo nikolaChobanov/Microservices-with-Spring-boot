@@ -20,7 +20,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
 
 
-    @Qualifier("userDetailsServiceImpl")
+    @Qualifier("userService")
     @Autowired
     private UserDetailsService userDetailsService;
 
@@ -33,27 +33,22 @@ public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
         http
                 //Disabled because no need of this type of security when using jwt
                 .csrf().disable()
-                // Stateless so we don't store user state
+                // Stateless so we don't store the user's state
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                //Sending error when user is trying to access without being authenticated
-
-                //.exceptionHandling().authenticationEntryPoint(new CustomAuthenticationEntryPoint())
-                //.and()
 
                 //Filter validating user credentials and adding token in the response header
                 .addFilter(new JwtUsernameAndPasswordAuthenticationFilter(authenticationManager(), jwtConfig, successHandler(), failureHandler()))
                 .authorizeRequests()
                 //allowing all POST requests
                 .antMatchers(HttpMethod.POST, jwtConfig.getUri()).permitAll()
+                .antMatchers(HttpMethod.POST, "/register").permitAll()
                 //all other requests need to be authenticated
                 .anyRequest().authenticated();
     }
 
 
-    // Spring has UserDetailsService interface, which can be overriden to provide our implementation for fetching user from database (or any other source).
-    // The UserDetailsService object is used by the auth manager to load the user from database.
-    // In addition, we need to define the password encoder also. So, auth manager can compare and verify passwords.
+    //used to fetch user data from database
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
