@@ -2749,7 +2749,7 @@ Caused by: org.springframework.beans.factory.BeanCreationNotAllowedException: Er
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
 	at com.sun.proxy.$Proxy128.findByUsername(Unknown Source)
-	at com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:47)
+	at com.autentication.authenticationservice.security.service.UserServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:47)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-27 17:30:57,309 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringContextShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
@@ -2825,7 +2825,7 @@ Caused by: org.springframework.beans.factory.BeanCreationNotAllowedException: Er
 2020-04-27 17:32:21,059 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-7] Logging failed
 2020-04-27 17:32:37,857 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-8] Logging failed
 2020-04-27 17:33:03,420 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-10] Logging failed
-2020-04-27 17:33:15,051 INFO com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl [http-nio-9100-exec-1] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-27 17:33:15,051 INFO com.autentication.authenticationservice.security.service.UserServiceImpl [http-nio-9100-exec-1] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-27 17:33:15,054 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-1] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -2879,11 +2879,11 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
-	at com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
+Caused by: com.autentication.authenticationservice.security.exception.BlockedUserException: Your ip has been blocked due to too many failed login attempts
+	at com.autentication.authenticationservice.security.service.UserServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
-2020-04-27 17:33:45,816 INFO com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl [http-nio-9100-exec-9] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-27 17:33:45,816 INFO com.autentication.authenticationservice.security.service.UserServiceImpl [http-nio-9100-exec-9] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-27 17:33:45,817 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-9] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -2937,11 +2937,11 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
-	at com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
+Caused by: com.autentication.authenticationservice.security.exception.BlockedUserException: Your ip has been blocked due to too many failed login attempts
+	at com.autentication.authenticationservice.security.service.UserServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
-2020-04-27 17:33:46,647 INFO com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl [http-nio-9100-exec-10] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-27 17:33:46,647 INFO com.autentication.authenticationservice.security.service.UserServiceImpl [http-nio-9100-exec-10] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-27 17:33:46,648 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-10] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -2995,8 +2995,8 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
-	at com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
+Caused by: com.autentication.authenticationservice.security.exception.BlockedUserException: Your ip has been blocked due to too many failed login attempts
+	at com.autentication.authenticationservice.security.service.UserServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-27 17:35:14,091 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\Nick\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
@@ -3065,7 +3065,7 @@ Caused by: com.autentication.authenticationservice.security.exception.UserIsBloc
 2020-04-27 17:37:19,399 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-10] Logging failed
 2020-04-27 17:37:31,236 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-1] Logging failed
 2020-04-27 17:37:33,371 ERROR com.autentication.authenticationservice.security.block.LoginAttemptService [http-nio-9100-exec-2] Logging failed
-2020-04-27 17:37:48,839 INFO com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl [http-nio-9100-exec-3] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
+2020-04-27 17:37:48,839 INFO com.autentication.authenticationservice.security.service.UserServiceImpl [http-nio-9100-exec-3] User with ip: 0:0:0:0:0:0:0:1 is blocked for too many failed login attempts
 2020-04-27 17:37:48,842 ERROR org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter [http-nio-9100-exec-3] An internal error occurred while trying to authenticate the user.
 org.springframework.security.authentication.InternalAuthenticationServiceException: Your ip has been blocked due to too many failed login attempts
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
@@ -3119,8 +3119,8 @@ org.springframework.security.authentication.InternalAuthenticationServiceExcepti
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.autentication.authenticationservice.security.exception.UserIsBlocked: Your ip has been blocked due to too many failed login attempts
-	at com.autentication.authenticationservice.security.service.UserRepositoryServiceServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
+Caused by: com.autentication.authenticationservice.security.exception.BlockedUserException: Your ip has been blocked due to too many failed login attempts
+	at com.autentication.authenticationservice.security.service.UserServiceImpl.loadUserByUsername(UserRepositoryServiceServiceImpl.java:44)
 	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
 	... 50 common frames omitted
 2020-04-27 17:38:36,419 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\Nick\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/Nick/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
