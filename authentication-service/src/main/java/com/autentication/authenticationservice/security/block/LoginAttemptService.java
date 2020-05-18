@@ -16,7 +16,7 @@ public class LoginAttemptService {
     private com.google.common.cache.LoadingCache<String, Integer> attemptsCache;
 
     public LoginAttemptService() {
-      //  super();
+        super();
         attemptsCache = CacheBuilder.newBuilder().
                 expireAfterWrite(1, TimeUnit.DAYS).build(new CacheLoader<String, Integer>() {
             public Integer load(String key) {

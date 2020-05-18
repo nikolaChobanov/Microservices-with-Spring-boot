@@ -8,6 +8,9 @@ import java.util.Optional;
 
 public interface UserService extends UserDetailsService {
 
+
+    Boolean findIfUsernameFree(String username);
+
     Optional<AppUser> findByUsername(String username);
 
     AppUser createUser(AppUser appUser);
