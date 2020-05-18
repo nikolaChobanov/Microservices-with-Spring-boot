@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -31,7 +30,6 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
 
     private AuthenticationManager authenticationManager;
 
-    @Autowired
     private JwtConfig jwtConfig;
 
     public JwtUsernameAndPasswordAuthenticationFilter(AuthenticationManager authenticationManager,
@@ -87,10 +85,6 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
                 .signWith(SignatureAlgorithm.HS512, jwtConfig.getSecret().getBytes())
                 .compact();
 
-
-
-  //String token = jwtConfig.generateToken(authResult.getName(), authResult.getAuthorities());
-       log.info("User: " + authResult.getName() + " has successfully logged in");
         response.addHeader(jwtConfig.getHeader(), jwtConfig.getPrefix() + token);
     }
 
