@@ -34,9 +34,7 @@ public class ApiResponse {
     public void send(HttpServletResponse response, int code) throws IOException {
         response.setStatus(code);
         response.setContentType("application/json");
-        String errorMessage;
-
-        errorMessage = toJson();
+        String errorMessage = toJson();
 
         response.getWriter().println(errorMessage);
         response.getWriter().flush();
